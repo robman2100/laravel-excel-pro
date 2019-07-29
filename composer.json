@@ -1,0 +1,58 @@
+{
+  "name": "robman2100/laravel-excel-pro",
+  "description": "Supercharged Excel exports and imports in Laravel",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "php",
+    "phpspreadsheet",
+    "phpexcel",
+    "excel",
+    "csv",
+    "export",
+    "import",
+    "batch"
+  ],
+  "authors": [
+    {
+      "name": "Robert Moses",
+      "email": "none@none.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "php": "^7.0",
+    "phpoffice/phpspreadsheet": "^1.6",
+    "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*",
+    "opis/closure": "^3.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "mockery/mockery": "^1.1",
+    "orchestra/testbench": "^3.8",
+    "orchestra/database": "^3.8",
+    "predis/predis": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "robman2100\\Excel\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "robman2100\\Excel\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "robman2100\\Excel\\ExcelServiceProvider"
+      ],
+      "aliases": {
+        "Excel": "robman2100\\Excel\\Facades\\Excel"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
